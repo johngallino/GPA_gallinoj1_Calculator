@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GPA_gallinoj1_Calculator</string>
+    <string name="course1">Mobile Computing</string>
+    <string name="course2">Databases</string>
+    <string name="course3">Algorithm Analysis</string>
+    <string name="course4">Robotics</string>
+    <string name="course5">Machine Learning</string>
+    <string name="courseHeader">Course Title</string>
+    <string name="gradeHeader">Grade</string>
+    <string name="calculatedGPA">0%</string>
+    <string name="bigButton">Compute GPA</string>
+    <string name="bigButton2">Clear Form</string>
+</resources>

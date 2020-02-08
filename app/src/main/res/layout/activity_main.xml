@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/gradeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:text="@string/gradeHeader"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/courseHeader"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/courseHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/courseHeader"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/Course1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/courseHeader"
+            app:layout_constraintVertical_bias="0.39"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/Course1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/course1"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/course2"
+            app:layout_constraintStart_toStartOf="@+id/course2"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <EditText
+            android:id="@+id/grade1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Course1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Course1"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/course2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/course2"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/course3"
+            app:layout_constraintStart_toStartOf="@+id/course3"
+            app:layout_constraintTop_toBottomOf="@+id/Course1" />
+
+        <EditText
+            android:id="@+id/grade2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/course2"
+            app:layout_constraintEnd_toEndOf="@+id/grade1" />
+
+        <TextView
+            android:id="@+id/course3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/course3"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/course4"
+            app:layout_constraintStart_toStartOf="@+id/course4"
+            app:layout_constraintTop_toBottomOf="@+id/course2" />
+
+        <EditText
+            android:id="@+id/grade3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/course3"
+            app:layout_constraintEnd_toEndOf="@+id/grade2" />
+
+
+        <TextView
+            android:id="@+id/course4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/course4"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/course5"
+            app:layout_constraintStart_toStartOf="@+id/course5"
+            app:layout_constraintTop_toBottomOf="@+id/course3" />
+
+        <EditText
+            android:id="@+id/grade4"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/course4"
+            app:layout_constraintEnd_toEndOf="@+id/grade3" />
+
+        <TextView
+            android:id="@+id/course5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/course5"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/bigbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course4" />
+
+
+        <EditText
+            android:id="@+id/grade5"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/course5"
+            app:layout_constraintEnd_toEndOf="@+id/grade4" />
+
+        <Button
+            android:id="@+id/bigbutton"
+            android:layout_width="209dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/bigButton"
+            app:layout_constraintBottom_toBottomOf="@+id/calculatedGPA"
+            app:layout_constraintStart_toStartOf="@+id/course5"
+            app:layout_constraintTop_toBottomOf="@+id/course5" />
+
+        <TextView
+            android:id="@+id/calculatedGPA"
+            android:layout_width="143dp"
+            android:layout_height="97dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/calculatedGPA"
+            android:textAlignment="center"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bigbutton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
